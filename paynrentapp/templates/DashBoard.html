@@ -1,0 +1,28 @@
+
+  <html>
+    <link rel="stylesheet" href="/static/css/Dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <body>
+  <div style="display: flex; flex-direction:column; width: 100vw; height: 100vh;">
+  <nav class="navbar bg-body-tertiary" style="background: linear-gradient(0deg, rgba(174,34,195,1) 0%, rgba(113,7,144,1) 100%);">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="text-decoration: none; color:#fff; font-family: Poppins; font-weight: bold;" href="#">PayNRent</a>
+        <span style="width:500px; display: flex; flex-direction: row;justify-content: space-evenly;">
+          <a href="/api/categorydisplay" target="mw"  style="text-decoration: none; color:#fff; font-family: Poppins; font-weight: bold;">Category</a>
+          <a href="/api/subcategorydisplay" target="mw" style="text-decoration: none; color:#fff; font-family: Poppins; font-weight: bold;">Brands</a>
+          <a href="/api/vehicledisplay" target="mw"style="text-decoration: none; color: #fff; font-family: Poppins; font-weight: bold;">Vehicle</a>
+          <a href="/api/agencydisplay" target="mw"style="text-decoration: none; color: #fff; font-family: Poppins; font-weight: bold;">Agencies</a>
+
+
+        </span>
+        <span style="text-decoration: none; color:#fff; font-family: Poppins; font-weight: bold;">{{data.adminname}}</span>
+      </div>
+    </nav>
+
+    <iframe name="mw" frameborder="0" style="width:'100%';height: 100vh; z-index: 1;">
+
+    </iframe>
+    </div>
+
+</body>    
+</html>
